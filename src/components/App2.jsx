@@ -7,16 +7,7 @@ export default function App2() {
   ];
   return (
     <div>
-      <h1>This is App2 component</h1>
-      <div className="App-Product-Container">
-        {products.map((value) => (
-          <div className="App-Product-Box" key={value.id}>
-            <h3>{value.name}</h3>
-            <h4>{value.price}</h4>
-            <p><button>Add to Cart</button></p>
-          </div>
-        ))}
-      </div>
+     <Product />
     </div>
   );
 }
