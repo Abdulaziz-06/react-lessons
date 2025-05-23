@@ -5,18 +5,17 @@ import './App.css'
 import { BrowserRouter,Routes,Route,Link } from 'react-router-dom'
 import App1 from './components/App1';
 import App2 from './components/App2';
+import Header from './components/Header';
+import Footer from './components/Footer'
+
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <header>
-          <h1>React app</h1>
-          <Link to="/">App1</Link>-
-          <Link to="/app2">App2</Link>
-          
-          <hr />
-        </header>
+        
+        <Header />
 
         <main>
           <Routes>
@@ -26,11 +25,7 @@ function App() {
              
           </Routes>
         </main>
-
-        <footer>
-          <hr />
-          &copy; 2005. All rights Reserved.
-        </footer>
+        <Footer />
       </BrowserRouter>
     </div>
   )

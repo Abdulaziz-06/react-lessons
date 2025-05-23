@@ -1,10 +1,11 @@
-import React from 'react'
-import Product from "./Product"
+import Product from "./Product";
+import Variant from "./Variant";
 export default function App1() {
   return (
-    <div>
-    <div>My App1</div>
-    <Product />
-    </div>
+    <>
+      <h1>This is App1 Component</h1>
+      <Product name="Laptop" price={45000} />
+      <Variant />
+    </>
   );
 }
