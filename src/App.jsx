@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import App3 from './components/App3'
 import App4 from './components/App4'
 import App5 from './components/App5'
-
+import App6 from './components/App6'
 
 
 
@@ -29,6 +29,7 @@ function App() {
             <Route path="/app3" element={<App3/>}></Route>
             <Route path="/app4" element={<App4/>}></Route>
            <Route path="/app5" element={<App5/>}></Route>
+           <Route path="/app6" element={<App6/>}></Route>
              
           </Routes>
         </main>
