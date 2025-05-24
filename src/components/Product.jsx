@@ -1,19 +1,8 @@
-import React from 'react'
-import App2 from './App2'
-import { Link } from 'react-router-dom'
-export default function Product() {
-  return (
-    <div>
-       <h1>This is App2 component</h1>
-      <div className="App-Product-Container">
-        {products.map((value) => (
-          <div className="App-Product-Box" key={value.id}>
-            <h3>{value.name}</h3>
-            <h4>{value.price}</h4>
-            <p><button>Add to Cart</button></p>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
+import "./Product.css";
+export default function Product(props) {
+  return <div className='App-Product-Box'>
+    <h2>{props.value.name}</h2>
+    <h3>{props.value.price}</h3>
+    <button>Add to Cart</button>
+  </div>;
 }
