@@ -3,7 +3,7 @@ import Fruit from './Fruit';
 import './App6.css';
 
 const App6 = () => {
-  const fruits = ['Apple', 'Mango', 'Orange', 'Banana']; 
+  const fruits = ['Apple', 'Orange', 'Mango', 'Banana']; 
   
   return (
    
